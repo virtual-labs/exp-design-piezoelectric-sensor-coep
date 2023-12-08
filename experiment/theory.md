@@ -60,9 +60,9 @@ Capacitance between electrodes
    But F / A = P = pressure or stress in N/M²
    E0= (d/ ℇrℇ0 ) t P                ……….(vii)
    
-      = g t P                             ……….(viii)
+= g t P                             ……….(viii)
 	  
-    Where      g = d / ℇrℇ0                    ……….(ix) 
+Where      g = d / ℇrℇ0                    ……….(ix) 
 	
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N
 
