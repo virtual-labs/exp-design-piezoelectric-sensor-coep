@@ -37,11 +37,17 @@ and  F = applied force, N
 The force F causes a change in thickness of the crystal.
 ![*formula*](images/formula.png)
 
-where A = area of crystal ; m2
+where,
+A = area of crystal ; m²
+
 t = thickness of crystal; m, and
-E = Young's modulus N / m2
-  From eqn (i) and (ii) We have, charge
-          Q = dAE(   t / t )       ………(iii)
+
+E = Young's modulus N / m²
+
+From eqn (i) and (ii) We have, charge
+
+Q = dAE(   t / t )       ………(iii)
+
 The charge at the electrodes gives rise to an output voltage E₀
      Voltage E₀ = Q / Cp             ………(iv)
 where Cp = capacitance between electrodes; F
@@ -71,15 +77,15 @@ Thus if g is known for a particular material, the voltage output per unit stress
 
 ### Properties of Piezo-electric Crystals : 
 - The materials used in the construction of piezoelectric crystal or piezoelectric materials are quartz, rochelle salt, dipotassium tartrate, lithium sulphate, barium titanate, etc. The most required properties of these materials are stability, insensitivity to changes in humidity, insensitivity to changes in temperature, high output, ability to be formed into a usable component or desirable shape.
-- 	When compared to all other materials quartz has the highest stability, but provides low output. Whereas the material called Rochelle salt provides high output but its stability is low and is sensitive to humidity and temperature variations. Therefore, it requires some protection against moisture and the operating range of temperature is below 45°C.
--	Since the barium titanate (one of the piezoelectric materials) is polycrystalline, it can be formed into different types of shapes and sizes. Also, these materials have a very high dielectric constant.
--	Synthetic materials possess very high voltage sensitivity.
--	The natural crystals must have,
-        -	Can be able to withstand higher stresses,
-        -	Provides good frequency response,
-        -	Have low leakage, and
-        -	Have very high thermal and mechanical stability.
-        -	The piezoelectric crystals have high input impedance.
+- When compared to all other materials quartz has the highest stability, but provides low output. Whereas the material called Rochelle salt provides high output but its stability is low and is sensitive to humidity and temperature variations. Therefore, it requires some protection against moisture and the operating range of temperature is below 45°C.
+- Since the barium titanate (one of the piezoelectric materials) is polycrystalline, it can be formed into different types of shapes and sizes. Also, these materials have a very high dielectric constant.
+- Synthetic materials possess very high voltage sensitivity.
+- The natural crystals must have,
+- Can be able to withstand higher stresses,
+- Provides good frequency response,
+- Have low leakage, and
+- Have very high thermal and mechanical stability.
+- The piezoelectric crystals have high input impedance.
 
 ### Construction :
 -	A piezoelectric transducer consists of quartz crystal which is made from silicon and oxygen arranged in crystalline structure (SiO2).
