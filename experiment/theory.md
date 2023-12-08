@@ -14,7 +14,7 @@ The piezoelectric effect is very useful within many applications that involve  :
 -	Microbalances, 
 -	Ultra fine focusing of optical assemblies.
 
-Common piezo-electric materials include Rochelle salts, ammonium dihydrogen phosphate, lithium sulphate, dipotassium tartrate, potassium dihydrogen phosphate, quartz and ceramics A and B. Except for quartz and ceramics A and B, the rest are man-made crystals grown from aqueous solutions under carefully controlled conditions. The ceramic materials are poly- crystalline in nature. They are, basically, made of barium titanate. They do not have piezo-electric properties in their original state but these properties are produced by special polarizing treatment.
+ Common piezo-electric materials include Rochelle salts, ammonium dihydrogen phosphate, lithium sulphate, dipotassium tartrate, potassium dihydrogen phosphate, quartz and ceramics A and B. Except for quartz and ceramics A and B, the rest are man-made crystals grown from aqueous solutions under carefully controlled conditions. The ceramic materials are poly- crystalline in nature. They are, basically, made of barium titanate. They do not have piezo-electric properties in their original state but these properties are produced by special polarizing treatment.
 The piezo-electric effect can be made to respond to (or cause) mechanical deformations of the material in many different modes. 
 The modes can be : 
 -	Thickness expansion,
