@@ -54,22 +54,28 @@ where Cp = capacitance between electrodes; F
 Capacitance between electrodes
   Cp = ℇrℇ0A / t       ………(v)
    From Eqn ( I ), ( iv ), ( v )
+   
    E0 = Q/Cp = dF/ ℇrℇ0A / t  = (dt/ ℇrℇ0) * F/A   ………..(vi)
+   
    But F / A = P = pressure or stress in N/M²
    E0= (d/ ℇrℇ0 ) t P                ……….(vii)
+   
       = g t P                             ……….(viii)
+	  
     Where      g = d / ℇrℇ0                    ……….(ix) 
+	
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N
+
  Now          g = E0 / tP = (E0 / t) / P           ……….(x)
 But E0/ t = electric field strength, V/m
     Let   ℇ = E0/ t = electric field
      g = electric field / stress = ℇ/P            ……….(xi)
 The two main families of constants i.e. the ‘d’ constants and ‘g’ constants are considered. For barium titanate the commonly used constants are d33 and g33
 g33 = field produced in direction 3 / stress applied in direction 3
-                                 g33 = (E0 / t) / ( F / A)                  ……….(xii)
-             Voltage Output 
-                                             E0 = g33 × ( F / A) × t 
-                                                    = g33 t P                                    ……….(xiii)    
+ g33 = (E0 / t) / ( F / A)                  ……….(xii)
+ Voltage Output 
+E0 = g33 × ( F / A) × t 
+   = g33 t P                                    ……….(xiii)    
 Thus if g is known for a particular material, the voltage output per unit stress can be calculated by knowing the value of  t.
 
 ### Properties of Barium Titanate and Quartz:  
