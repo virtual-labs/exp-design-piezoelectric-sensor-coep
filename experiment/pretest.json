@@ -2,38 +2,65 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": " A transducer that converts measure and into the form of pulse is known as___",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+         "a": "Active transducer",
+        "b": "Analog transducer",
+        "c": "Digital transducer",
+        "d": "Pulse transducer"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A piezoelectric transducer is an ignition source for a cigarette.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+   
       },
+     
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In piezoelectric transducer, the polarity of produced charge depends upon _____",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "The direction of applied stress",
+        "b": "Piezoelectric material property",
+        "c": "Transducer orientation",
+        "d": "All the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "PZT-5 is formed by doping PZT with",
+      "answers": {
+        "a": "Donor ions",
+        "b": "Acceptor ions",
+        "c": "Nitrogen",
+        "d": "All of these"
       },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Piezoelectric voltage constant g defines the relation between",
+      "answers": {
+        "a": "Internal stress and magnetic field",
+        "b": "External stress and applied electric field",
+        "c": "External stress and induced electric field",
+        "d": "Internal stress and induced electric field"
+      },
+     
       "correctAnswer": "c",
       "difficulty": "beginner"
     }
+  
   ]
 }
