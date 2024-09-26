@@ -1,9 +1,11 @@
 
 			var flag = false;
 			var myRadio = null;
-			data = {};
-			dataQues = {};
-
+//			data = {};
+//			dataQues = {};
+           counterMasterJson = {};
+           var ansCount = 0;
+           
 			var questions = '';
 			questions += ''
 				+ '<div id = "questionDiv">'
@@ -116,9 +118,14 @@
 								ansCount++;
 							}
 						}
-						dataQues.corrAns = ansCount;
-						 data.corrAns = dataQues;
-						 console.log(data);
+//						dataQues.corrAns = ansCount;
+//						 data.corrAns = dataQues;
+                         var wrongAns = 6-ansCount;
+                         var tempCountJson ={};
+						tempCountJson.correctAnswer = ansCount; 
+						tempCountJson.wrongAnswer = wrongAns; 
+						counterMasterJson.questionary = tempCountJson;
+						 console.log(counterMasterJson);
 						 $('body').css('padding-right', '0px !important;');
 						 $("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	                     $(".modal-header").html("Success Message");
