@@ -18,9 +18,9 @@ function tableReading(masterJson)
 					+ '  <tr style = "BACKGROUND-COLOR: #072647; color:#fff; ">'
 					+ '  <th><center>Sr.No</center></th>'
 					+ '  <th><center>Force F(N)</center></th>'
-					+ '   <th><center>Pressure P(Mn/m<sup>2</sup>)</center></th>'
-					+ '  <th><center>Voltage output E<sub>0</sub></center> </th>'
-                    + '  <th><center>Charge Q</center> </th>'
+					+ '   <th><center>Pressure P(MN/m<sup>2</sup>)</center></th>'
+					+ '  <th><center>Voltage output E<sub>0</sub> (V)</center> </th>'
+                    + '  <th><center>Charge Q (pC)</center> </th>'
 					+ '   </tr>'
 					+ '  </thead>'
 					+ '   <tbody>'
@@ -74,6 +74,7 @@ function tableReading(masterJson)
 //                    $("#canvas-div").html('table');	
 //				});
 				$("#compare").click(function() {
+					 
 					compareTable(masterJson);
 					//graphCreate(masterJson);
 				});
@@ -98,9 +99,9 @@ function tableReading1(masterJson)
 					+ '  <tr style = "BACKGROUND-COLOR: #072647; color:#fff; ">'
 					+ '  <th><center>Sr.No</center></th>'
 					+ '  <th><center>Force F(N)</center></th>'
-					+ '   <th><center>Pressure P(Mn/m<sup>2</sup>)</center></th>'
-					+ '  <th><center>Voltage output E<sub>0</sub></center> </th>'
-                    + '  <th><center>Charge Q</center> </th>'
+					+ '   <th><center>Pressure P(MN/m<sup>2</sup>)</center></th>'
+					+ '  <th><center>Voltage output E<sub>0</sub> (V)</center> </th>'
+                    + '  <th><center>Charge Q (pC)</center> </th>'
 					+ '   </tr>'
 					+ '  </thead>'
 					+ '   <tbody>'
@@ -152,6 +153,7 @@ function tableReading1(masterJson)
 				
 				$("#compare").click(function() {
 					compareTable(masterJson);
+					
 					//graphCreate1(masterJson);
 				});
           

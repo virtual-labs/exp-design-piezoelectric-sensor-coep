@@ -5,6 +5,13 @@ var arrayJson = [];
 var arrayJson1 = [];
 var id1 = 1;
  var itr = 1;
+ var ranOutput = 0;
+ 
+ var wrongAttemptForceM1 = 0,wrongAttemptForceM2= 0;
+ var wrongAttemptPressureM1= 0,wrongAttemptPressureM2= 0;
+ var wrongAttemptOutputM1= 0,wrongAttemptOutputM2= 0;
+ var wrongAttemptChargeM1= 0,wrongAttemptChargeM2= 0;
+ 
 function calculateVal(){
 	
 	 $("#main-div-conf").html('');	
@@ -79,7 +86,7 @@ function calculateVal(){
 				   +'<label  id="enterLoad"  class="" style="font-size:16px;margin:15px 10px ;">Enter force F(N):  </label>'
 				   +'</div>'
 				   +'<div class="col-sm-3" id="valueStep1">'
-				   +'<input type="text"  value="" id="text1"  style=margin:15px 10px;width:150%;height:50%;" class=" form-control" />'
+				   +'<input type="number"  value="" id="text1"  style=margin:15px 10px;width:150%;height:50%;" class=" form-control" />'
 				   +'</div>'
 				   +'<div class="col-sm-3"  id="submitStep1">'
 				   +'<br><button type="submit" class="btn btn-danger"  id="submit_load1" data-toggle="modal" data-target="#myModal" style="width:100%;height:50%;margin-top: -6px;" >Submit</input>'
@@ -88,10 +95,10 @@ function calculateVal(){
 				 
 				   +'<div class="col-sm-12" id="calculationVal" hidden>'
 				   +'<div class="col-sm-5">'
-				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate pressure P(Mn/m<sup>2</sup>):  </label>'
+				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate pressure P(MN/m<sup>2</sup>):  </label>'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
-				   +'<input type="text" value="" id="text2"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
+				   +'<input type="number" value="" id="text2"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
 				   +'<br><button type="submit" class="btn btn-danger"  id="submit_load2" data-toggle="modal" data-target="#myModal" style="width:100%;height:50%;margin-top: -6px;" >Submit</input>'
@@ -101,10 +108,10 @@ function calculateVal(){
 				   
 				   +'<div class="col-sm-12" id="calOutputVoltage" hidden>'
 				   +'<div class="col-sm-5">'
-				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate voltage output E<sub>0</sub> :  </label>'
+				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate output voltage E<sub>0</sub> (V) :  </label>'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
-				   +'<input type="text" value="" id="text3"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
+				   +'<input type="number" value="" id="text3"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
 				   +'<br><button type="submit" class="btn btn-danger"  id="submit_load3" data-toggle="modal" data-target="#myModal" style="width:100%;height:50%;margin-top: -6px;" >Submit</input>'
@@ -113,10 +120,10 @@ function calculateVal(){
 				  
 				   +'<div class="col-sm-12" id="calCharge" hidden>'
 				   +'<div class="col-sm-5">'
-				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate charge Q :  </label>'
+				   +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;">Calculate charge Q (pC):  </label>'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
-				   +'<input type="text" value="" id="text4"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
+				   +'<input type="number" value="" id="text4"  style=margin:15px 10px;width:150%;height:50%;"  class=" form-control" />'
 				   +'</div>'
 				   +'<div class="col-sm-3">'
 				   +'<br><button type="submit" class="btn btn-danger"  id="submit_load4" data-toggle="modal" data-target="#myModal" style="width:100%;height:50%;margin-top: -6px;" >Submit</input>'
@@ -132,7 +139,7 @@ function calculateVal(){
 		
 		$("#canvas-div").append(labels1);
 		
-		var htm1 = '<img src="images/Ultrasonic-Piezoelectric-Transducer-1.png" class="img-fluid" >'
+		var htm1 = '<img src="images/piezoDraw.png" class="img-fluid" >'
         $("#main-div-conf").html(htm1);
 		
 //		var forceVal = 0;
@@ -143,7 +150,9 @@ function calculateVal(){
 			  $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");	
+			$("#MsgModal").html("Enter the Values");
+				
+				
 			}else{
 				text1 = parseFloat($("#text1").val());
 			 const index = arrWeight.indexOf(text1);
@@ -177,6 +186,15 @@ function calculateVal(){
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("Enter Force between 1 to 50 (N)");
+			
+			if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptForceM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptForceM2++;
+	            }
+				}
+			
 //				alert("Enter Force between 1 to 50");
 			}
 					}
@@ -220,6 +238,14 @@ function calculateVal(){
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("Entered value is Incorrect.<br>Try again");	
 					
+					if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptPressureM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptPressureM2++;
+	            }
+				}
+					
 //				alert("Entered value is incorrect.Try it again.");
 //				 $("#modelMsg").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
 //				 $("body").css("padding","0px 0px 0px 0px");
@@ -233,6 +259,13 @@ function calculateVal(){
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("<b>Formula : Pressure = F/A, where A = length &times; width</b>");
+			if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptPressureM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptPressureM2++;
+	            }
+				}
 //				alert("formula : pressure P = F/A where A = length * width");
 				
 //				 $("#modelMsg").html("<b class='boldTextBlue'>formula : Area = "+unescape('%u220F')+" r"+unescape('%B2')+"</b> ");
@@ -255,7 +288,7 @@ function calculateVal(){
 	
 				} else {
 					checkAns = 0;
-					$("#btnModal").removeClass("btn-danger").addClass("btn-success");
+			$("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
 			$("#MsgModal").html("Correct Answer is " + pressure);
@@ -264,7 +297,16 @@ function calculateVal(){
 //					 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + axialCal+"</b>");
 //					 $("body").css("padding","0px 0px 0px 0px");
 //					 wrong_cnt++;	
-	
+	               
+	               if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptPressureM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptPressureM2++;
+	            }
+				}
+	               
+	               
 				}
 			}
 			id1++;
@@ -278,6 +320,9 @@ function calculateVal(){
 		var outputV = 0;
 		var outputVo = 0;
 		var id2 = 1;
+		
+		
+		
 		 $("#submit_load3").click(function(){
 			
 			if(materialSelect == 10){
@@ -317,6 +362,14 @@ function calculateVal(){
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("Entered value is Incorrect.<br>Try again");
+				
+				if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptOutputM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptOutputM2++;
+	            }
+				}
 					
 //				alert("Entered value is incorrect.Try it again.");
 //				 $("#modelMsg").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
@@ -332,6 +385,14 @@ function calculateVal(){
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("<b>Formula : voltage sensitivity &times; pressure &times; thickness  </b>");
+			
+			if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptOutputM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptOutputM2++;
+	            }
+			}
 //				alert("formula : voltage output = voltage sensitivity * pressure * thickness");
 				
 //				 $("#modelMsg").html("<b class='boldTextBlue'>formula : Area = "+unescape('%u220F')+" r"+unescape('%B2')+"</b> ");
@@ -355,6 +416,14 @@ function calculateVal(){
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
 			$("#MsgModal").html("Correct Answer is " + outputV);
+			
+			if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptOutputM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptOutputM2++;
+	            }
+			}
 //					alert("correct answer is " + outputV );
 					
 //					 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + axialCal+"</b>");
@@ -419,6 +488,15 @@ function calculateVal(){
 //				 $("body").css("padding","0px 0px 0px 0px");
 //				console.log("wrong");
 //				wrong_cnt++;
+                 
+                 if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptChargeM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptChargeM2++;
+	            }
+			}
+
 				}
 	
 	
@@ -428,6 +506,15 @@ function calculateVal(){
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
 			$("#MsgModal").html("<b>Formula : Charge = d &times; F</b>");
+			
+			if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptChargeM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptChargeM2++;
+	            }
+			}
+			
 //				alert("formula : charge = d * F");
 				
 //				 $("#modelMsg").html("<b class='boldTextBlue'>formula : Area = "+unescape('%u220F')+" r"+unescape('%B2')+"</b> ");
@@ -462,7 +549,13 @@ function calculateVal(){
 //					 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + axialCal+"</b>");
 //					 $("body").css("padding","0px 0px 0px 0px");
 //					 wrong_cnt++;	
-	
+	                if(itr==5){
+				if(materialSelect == 10){		
+				    wrongAttemptChargeM1++;
+	            }else if(materialSelect == 20){
+			       wrongAttemptChargeM2++;
+	            }
+			}
 				}
 			}
 			id3++;	
@@ -502,8 +595,9 @@ function calculateVal(){
 			});
 			
 			
-			
+			wrongAttemptChargeM2
 			$("#nextLevel").click(function(){
+				
 //				$('#compare1').prop("hidden",true);
 				$('#nextLevel').prop("hidden",true);
 //				$('#nextMaterial').prop("hidden",false);
@@ -511,12 +605,26 @@ function calculateVal(){
 					
 			$('#nextMaterial').prop("hidden",false);
 			 addFun();
-			  
+			            var tempCountJson ={};
+						tempCountJson.wrongForceRange = wrongAttemptForceM1;	
+						tempCountJson.wrongPressureCalculated = wrongAttemptPressureM1;	
+						tempCountJson.wrongOutPutCalculated = wrongAttemptOutputM1;
+						tempCountJson.wrongChargeCalculated = wrongAttemptChargeM1;					
+						counterMasterJson.barium = tempCountJson;
 			  }else{
 			$('#nextMaterial').prop("hidden",false);
 			addFun1();
-			
+			var tempCountJson ={};
+			tempCountJson.wrongAttemptForce = wrongAttemptForceM2; 	
+			tempCountJson.wrongPressureCalculated = wrongAttemptPressureM2;	
+			tempCountJson.wrongOutPutCalculated = wrongAttemptOutputM2;	
+			tempCountJson.wrongChargeCalculated = wrongAttemptChargeM1;			
+			counterMasterJson.Quartz = tempCountJson;
 			}
+			
+			
+			console.log(counterMasterJson);
+			
 			if(iteration > 1){
 				$('#compare').prop("hidden",false);
 			}else{
@@ -529,13 +637,28 @@ function calculateVal(){
 				});
 			
       	function addFun(){          
-							 
-							   
+
+
+var percentageError = (Math.random() * 2 + 3) / 100; // Generates a random number between 0.03 (3%) and 0.05 (5%)
+
+
+// Determine whether to add or subtract the error
+var isPositive = Math.random() < 0.5; // 50% chance to add or subtract
+
+// Calculate the error amount
+var errorAmount = text3 * percentageError;
+
+// Apply the error
+var ranOutput1 = (isPositive ? text3 + errorAmount : text3 - errorAmount).toFixed(3);
+var ranOutput = parseFloat(ranOutput1);
 							 tempJson={};
 							 tempJson.text1 = text1;
 							 tempJson.text2 = text2;
 							 tempJson.text3 = text3; 
 							 tempJson.text4 = text4; 
+							 tempJson.ranOutput = ranOutput; 
+		
+							 
 							 arrayJson.push(tempJson);
 							 masterJson.barium=arrayJson; 
 //							 masterJsonMaterial.material1 = masterJson; 
@@ -549,11 +672,25 @@ function calculateVal(){
 			}
 			
 		function addFun1(){
+			
+//var percentageError = (Math.random() * 2 + 4) / 100; // Now generates a random number between 0.04 (4%) and 0.06 (6%)
+var percentageError = (Math.random() * 2 + 3) / 100;
+// Determine whether to add or subtract the error
+var isPositive = Math.random() < 0.5; // 50% chance to add or subtract
+
+// Calculate the error amount
+var errorAmount = text3 * percentageError;
+
+// Apply the error
+var ranOutput1 = (isPositive ? text3 + errorAmount : text3 - errorAmount).toFixed(3);
+var ranOutput = parseFloat(ranOutput1);  
+			
 			tempJson={};
 							 tempJson.text1 = text1;
 							 tempJson.text2 = text2;
 							 tempJson.text3 = text3; 
 							 tempJson.text4 = text4; 
+							 tempJson.ranOutput = ranOutput; 
 							 arrayJson1.push(tempJson);
 							 masterJson.quartz=arrayJson1;
 							 masterJson.quartz.sort(function(a, b){

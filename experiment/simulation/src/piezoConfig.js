@@ -199,7 +199,17 @@ function config1(){
 //		$("#modelMsg").html("<b class='boldTextGreen'>Configured Successfully</b>");		
 		$("#checkConfg").prop('hidden',true);
 		
+		var tempCountJson ={};
+						tempCountJson.length = length; 
+						tempCountJson.width = widthSelect; 
+						tempCountJson.height = thickSelect; 
+						counterMasterJson.stdCalculate = tempCountJson;
+						 console.log(counterMasterJson);
+		
+		
 		$("#dimension").prop('disabled',true);
+		$("#width").prop('disabled',true);
+		$("#length").prop('disabled',true);
 		$("#thick").prop('disabled',true);		
 		$("#nextLevelForConfig").prop('hidden',false);
 		
@@ -221,6 +231,10 @@ function config1(){
 	}	 
 $("#nextLevelForConfig").click(function() {
 //		if(flgSec==1){
+	
+	                     
+	    
+	
 			calculateVal();
 			
 			
