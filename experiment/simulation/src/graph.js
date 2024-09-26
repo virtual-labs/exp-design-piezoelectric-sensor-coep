@@ -55,14 +55,14 @@
 				min: Xmin,
 				max: Xmax,
 				title: {
-					text: 'Force'
+					text: 'Force (N)'
 				}
 			},
 			yAxis: {
 				min: Ymin,
 				max: Ymax,
 				title: {
-					text: 'Output Voltage '
+					text: 'Output Voltage (V)'
 				}
 			},
 			series: [
@@ -97,7 +97,7 @@
 
 function graphCreate1(masterJson)
 	{
-		
+	
 	var xdata=[];
 	var ydata=[];
 	
@@ -151,14 +151,14 @@ function graphCreate1(masterJson)
 				min: Xmin,
 				max: Xmax,
 				title: {
-					text: 'Force'
+					text: 'Force (N)'
 				}
 			},
 			yAxis: {
 				min: Ymin,
 				max: Ymax,
 				title: {
-					text: 'Output Voltage '
+					text: 'Output Voltage (V)'
 				}
 			},
 			series: [
