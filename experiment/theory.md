@@ -54,8 +54,7 @@ Capacitance between electrodes
 	  
  But F / A = P = pressure or stress in N/M²
  
-  E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)
-  
+  E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)  
                             = g t P                             ……….(viii)
 							
   Where g = d / &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>  ……….(ix) 
