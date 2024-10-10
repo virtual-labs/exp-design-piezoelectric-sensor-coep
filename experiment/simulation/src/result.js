@@ -1,7 +1,8 @@
 function result(){
+	$("#btnForModal").prop("hidden",true);
 	
 	
-	var correctVal = (counterMasterJson.questionary.correctAnswer/6).toFixed(2);
+var correctVal = (counterMasterJson.questionary.correctAnswer/6).toFixed(2);
 var quesPercent = (correctVal*100).toFixed(1);
 quesPercent = parseFloat(quesPercent);
 
@@ -22,6 +23,10 @@ var quartzPercent = (quartzCalculate*100).toFixed(1);
 quartzPercent = parseFloat(quartzPercent);
 console.log(quartzPercent);
 
+
+var totPercent = ((parseFloat(bariumPercent)+parseFloat(quartzPercent)/2)).toFixed(1);
+totPercent = parseFloat(totPercent);
+
 var sub = counterMasterJson.sensorTesting.totalCnt - counterMasterJson.sensorTesting.sensorBreakTesting;
 var testingPercent = (100*sub/counterMasterJson.sensorTesting.totalCnt).toFixed(1);
 testingPercent = parseFloat(testingPercent);
@@ -39,8 +44,8 @@ var htm = ''
 
 	+ '<div class="col-md-4">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center style="    font-size: 16px;">Congratulations!!! <br> <b>Piezo electric transducer experiment is completed successfully!!</b>'
-	+ '<br> <b>Satisfactory performance</b></center></div>'
+	+ ' <div class="panel-body remark" ><center style="    font-size: 16px;">Congratulations!!! <br> <b>Piezo electric transducer simulation is completed !!</b>'
+//	+ '<br> <b>Satisfactory performance</b></center></div>'
 	+ '</div>'
 	+ '</div>'
 
@@ -103,34 +108,50 @@ var htm = ''
 		 +'<br><table class="table table-bordered ">'
 		   +'  <thead class="thead-dark">'
 		   +'    <tr class="">'
-		   +'      <th><center class="">COMPETENCY(PIEZO ELECTRIC SENSOR)</center></th>'
+		   +'      <th><center class="">COMPETENCY (PIEZO ELECTRIC SENSOR)</center></th>'
 		   +'     <th><center class="">STATUS</center></th>'
 		   +'    </tr>'
 		   +' </thead>'
 		   +'  <tbody>'
 		   +'   <tr>'
 		   +'     <td class=""><center>Basic knowledge</center></td>'
-		   +'     <td class=""><center class="attained"> Attained</center></td>'
-		  
-		   +'  </tr>'
+		   if(quesPercent>=60){
+		   htm += '     <td class=""><center class="attained"> Attained</center></td>'
+		   }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+
+		}
+		   htm += '  </tr>'
 		   +'  <tr>'
 		   +'     <td class=""><center>Configuration</center></td>'
 		   +'     <td class=""><center class="attained"> Attained</center></td>'
 		   +' </tr>'
 		   +'   <tr>'
 		  +'     <td class=""><center>Calculation</center></td>'
-		   +'     <td class=""><center class="attained">Attained</center></td>'
-		  
-		   +'  </tr>'
+		  if(totPercent>=60){
+		   htm += '     <td class=""><center class="attained">Attained</center></td>'
+		  }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+
+		}
+		   htm +='  </tr>'
 		   +'  <tr>'
-		+'<td class=""><center>Observation</center></td>'
+		+'<td class=""><center>Standard Observations</center></td>'
+		   +'<td class=""><center class="attained">Attained</center></td>'
+		   +' </tr>'
+		     +'  <tr>'
+		+'<td class=""><center>Actual Observations</center></td>'
 		   +'<td class=""><center class="attained">Attained</center></td>'
 		   +' </tr>'
 		   +'<tr>'
 		  +' <td class=""><center>Testing</center></td>'
-		   +'<td class=""><center class="attained"> Attained</center></td>'
-		  
-		   +'  </tr>'
+		  if(testingPercent>=60){
+		   htm += '<td class=""><center class="attained"> Attained</center></td>'
+		  }else{
+			htm +='     <td class=""><center class="NotAttained"> Not Attained</center></td>'
+
+		}
+		   htm +='  </tr>'
 			
 		   +' </tbody>'
 		  +' </table>'
@@ -240,7 +261,7 @@ var htm = ''
 		+' <div class="panel panel-danger  " style="    margin-bottom: 28px;">'
 		+'<center><span class="valueBox">Wrong Attempts</span></center>'
 		+' <div class="panel-body counterPanelRed">'
-
+     
 		+'<center><span class="valueBox"><b>'+BariumCalculateActual+'</b></span></center>'
 		+'</div>'
 		+'</div>'

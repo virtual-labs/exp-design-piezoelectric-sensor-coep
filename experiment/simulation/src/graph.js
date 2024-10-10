@@ -45,12 +45,23 @@
 //		}
 		console.log(" Voltage output V/S charge  " + graphData1);
 		Highcharts.chart('sub-main-div2', {
+			
+			legend: {
+				    symbolPadding: 0,
+				    symbolWidth: 0,
+				    symbolHeight: 0,
+				    squareSymbol: false,
+				    enabled : false
+				  },
+				exporting: { enabled: false },
+				credits: { enabled: false},
+			
 			title: {
 				text: 'Barium Titanate '
 			},
-//			subtitle: {
-//				text: 'Meter Constant is  pulses (per/ltr)'
-//			},
+			subtitle: {
+				text: ''
+			},
 			xAxis: {
 				min: Xmin,
 				max: Xmax,
@@ -141,12 +152,22 @@ function graphCreate1(masterJson)
 //		}
 		console.log(" Voltage output V/S charge  " + graphData1);
 		Highcharts.chart('sub-main-div1', {
+			legend: {
+				    symbolPadding: 0,
+				    symbolWidth: 0,
+				    symbolHeight: 0,
+				    squareSymbol: false,
+				    enabled : false
+				  },
+				exporting: { enabled: false },
+				credits: { enabled: false},
+			
 			title: {
 				text: 'Quartz '
 			},
-//			subtitle: {
-//				text: 'Meter Constant is  pulses (per/ltr)'
-//			},
+			subtitle: {
+				text: ''
+			},
 			xAxis: {
 				min: Xmin,
 				max: Xmax,
