@@ -42,11 +42,11 @@
 	<div  class="col-sm-12">
 	<div class="row">
 	<div class="col-sm-3"></div>
-	<div class="col-sm-2" id="materialType" style="margin-top:10px;"  hidden>
+	<div class="col-sm-2" id="materialType" style="margin-top:5px;margin-bottom:5px;"  hidden>
     <label class="labelstyle" id="labelType" >Select Material type: </label>   
     </div>
      <div class="col-sm-4">
-	   <select  class="form-control selectConf" id="material"  style="height:auto;margin-top:10px;" hidden>
+	   <select  class="form-control selectConf" id="material"  style="margin-top:5px;margin-bottom:5px;" hidden>
 	   <option value="0">--- Select the Material --- </option>'
 	   <option value="10" id="BariumTitanate" >Barium titanate </option>
 	   <option value="20" id="Quartz">Quartz</option>
@@ -54,9 +54,12 @@
         </select>          
         </div>
         <div class="col-sm-2">
+         <button type="button" class="btn btn-primary btnMarin" data-toggle="modal" style="margin-top:5px;margin-bottom:5px;" data-target="#exampleModal" id = "btnForModal">
+	  Procedure
+	</button>
         </div>
         <div class="col-sm-1">
-        <button type="button" class="btn btn-danger"  id="nextLevelChar" style="width:100%;margin-top: 16px;margin-left:100px;" hidden>Next Level</input>
+        <button type="button" class="btn btn-danger"  id="nextLevelChar" style="width:100%;margin-top: 5px;margin-left:100px;margin-bottom:5px;" hidden>Next Level</input>
         
         </div>
             </div> 
@@ -116,6 +119,28 @@
   </div>
 <!--   Model end -->
 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Procedure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body1" style="    overflow-y: scroll;height:600px;margin-left:10px; ">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
 	<footer>
 Copyrights &copy; COEP - Virtual Lab
 </footer>
@@ -154,6 +179,58 @@ $('#myModal').on('show.bs.modal', function (e) {
 	console.log("modal called");
 	$('body').css('padding-right', '0px !important;');
 });
+</script>
+
+<script>
+
+var htm = '';
+
+htm+= '<h3>Basic Knowledge:</h3>'
++'<ul>'
++'<li>Answer all the questions and click on "Submit Test" button.</li>'
++'</ul>'
+
++'<h3>Configuration:</h3>'
++'<ul>'
++'<li>Select the material.</li>'
++'<li>Select length, thickness, width of material and configure.</li>'
++'<li>Click on "Next Level".</li>'
++'</ul>'
+
++'<h3>Calculations:</h3>'
++'<ul>'
++'<li>Enter the Force between 1 to 50 (N).</li>'
++'<li>Calculate pressure and enter its value; if the value is correct, further calculations will be enabled. If the value is incorrect, the formula followed by the correct answer will be displayed after 3 attempts.</li>'
++'<li>Calculate output voltage and enter its value; if the value is correct, further calculations will be enabled. If the value is incorrect, the formula followed by the correct answer will be displayed after 3 attempts.</li>'
++'<li>Calculate charge Q. After calculating the correct answer, click on the Next Reading button and similarly calculate the other 4 readings for the same material.</li>'
++'<li>After calculating 5 readings, select another material from the top and repeat the same process by selecting another material.</li>'
++'<li>After recording 5 readings for the new material, click the "Compare with Previous Material" button.</li>'
++'</ul>'
+
++'<h3>Standard Observations:</h3>'
++'<ul>'
++'<li>Here, you can compare the difference between the standard calculations for both materials.</li>'
++'<li>Click "Next Level" at the top.</li>'
++'</ul>'
+
++'<h3>Actual Observations:</h3>'
++'<ul>'
++'<li>Here, you can find the difference between standard values and observed values for both materials.</li>'
++'<li>Click "Next Level" at the top.</li>'
++'</ul>'
+
++'<h3>Testing:</h3>'
++'<ul>'
++'<li>Select the material for testing.</li>'
++'<li>Select appropriate dimensions (i.e., length, width, and height) and click on check configuration.</li>'
++'<li>If the selected parameters are correct, the Height and Weight fields will be enabled, while the remaining configuration parameters above will be disabled.</li>'
++'<li>Enter a height between 1 and 100 cm, input the appropriate weight, and click "Start." You will then see the force required on the digital meter.</li>'
++'<li>Click on "Reset" button and take trials for different heights and weights.</li>'
++'<li>If the sensor breaks due to certain parameters, click the "Reselect" button to adjust the configuration and repeat the process, taking different trials. After recording 5 readings, you can proceed to the result.</li>'
++'</ul>'
+
+$(".modal-body1").html(htm);
+
 </script>
 
 </html>
