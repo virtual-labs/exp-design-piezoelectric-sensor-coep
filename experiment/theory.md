@@ -51,11 +51,15 @@ Capacitance between electrodes
        Cp = &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t       ………(v)
    From Eqn ( I ), ( iv ), ( v )
       E<sub>0</sub> = Q/Cp = dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t  = (dt/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>) * F/A   ………..(vi)
-                                 
-       But F / A = P = pressure or stress in N/M²
-       E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)
+	  
+ But F / A = P = pressure or stress in N/M²
+ 
+  E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)
+  
                             = g t P                             ……….(viii)
-            Where g = d / &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>  ……….(ix) 
+							
+  Where g = d / &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>  ……….(ix) 
+  
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N
                     Now g = E<sub>0</sub> / tP = (E<sub>0</sub> / t) / P  ……….(x)
 But E0/ t = electric field strength, V/m
