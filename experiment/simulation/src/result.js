@@ -23,15 +23,15 @@ var quartzPercent = (quartzCalculate*100).toFixed(1);
 quartzPercent = parseFloat(quartzPercent);
 console.log(quartzPercent);
 
-
-var totPercent = ((parseFloat(bariumPercent)+parseFloat(quartzPercent)/2)).toFixed(1);
-totPercent = parseFloat(totPercent);
-
 var sub = counterMasterJson.sensorTesting.totalCnt - counterMasterJson.sensorTesting.sensorBreakTesting;
 var testingPercent = (100*sub/counterMasterJson.sensorTesting.totalCnt).toFixed(1);
 testingPercent = parseFloat(testingPercent);
 console.log(testingPercent);
-	
+
+
+var totPercent = ((parseFloat(bariumPercent)+parseFloat(quartzPercent)/2)).toFixed(1);
+totPercent = parseFloat(totPercent);
+console.log(totPercent);	
 	
 var htm = ''
 	+ '<div class="container-fluid">'
@@ -44,8 +44,9 @@ var htm = ''
 
 	+ '<div class="col-md-4">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center style="    font-size: 16px;">Congratulations!!! <br> <b>Piezo electric transducer simulation is completed !!</b>'
-//	+ '<br> <b>Satisfactory performance</b></center></div>'
+	+ ' <div class="panel-body remark" ><center>Congratulations!!! <br> <b>Piezo electric transducer simulation is completed!!</b>'
+//	+ '<br> <b>Satisfactory performance</b></center>
+	 +'</div>'
 	+ '</div>'
 	+ '</div>'
 
@@ -91,17 +92,17 @@ var htm = ''
 //	+ '<label class=""><b>Thickness : mm</b></label>'
 	+ '</div>'
 	+ '<div class="col-sm-2">'
-	+ '<label class=""><b>Material : '+counterMasterJson.testingParameters.material+' </b></label>'
+	+ '<label class=""><b>Material : '+counterMasterJson.testingParameters.material+' mm</b></label>'
 	+ '</div>'
 	
 	+ '<div class="col-sm-2">'
-	+ '<label class=""><b>Thickness : '+counterMasterJson.testingParameters.height+' mm</b></label>'
+	+ '<label class=""><b>Thickness : '+counterMasterJson.testingParameters.height+'mm</b></label>'
 	+ '</div>'
 	+ ' </div>'
 	+ ' </div>'
 
     
-    +'<div class="container-fluid">'
+   +'<div class="container-fluid">'
 		+'  <div class="row">'
 		+'<div class="col-md-4">'
 	
@@ -261,7 +262,7 @@ var htm = ''
 		+' <div class="panel panel-danger  " style="    margin-bottom: 28px;">'
 		+'<center><span class="valueBox">Wrong Attempts</span></center>'
 		+' <div class="panel-body counterPanelRed">'
-     
+
 		+'<center><span class="valueBox"><b>'+BariumCalculateActual+'</b></span></center>'
 		+'</div>'
 		+'</div>'
