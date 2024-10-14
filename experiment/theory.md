@@ -27,51 +27,76 @@ The mode of motion affected depends on the shape of the body relative to the cry
 The piezo-electric effect is direction sensitive. A tensile force produces a voltage of one polarity while a compressive force produces a voltage of opposite polarity.
 
 ![*piezoTransducer*](images/piezoTransducer.png)
-
 ![*piezoTransducer*](images/xyzAxis.png)
 
 The magnitude and polarity of the induced surface charges are proportional to the magnitude and direction of the applied force F. The polarity of induced charges depends upon the direction of applied force.
 Charge Q = d x F coulomb ………(i)
-where d = charge sensitivity of the crystal
+
+where 
+
+d = charge sensitivity of the crystal
+
 C/N: (it is constant for a given crystal)
+
 and  F = applied force, N
+
 The force F causes a change in thickness of the crystal.
 
 ![*formula*](images/formula.png)
 
-where, A = area of crystal ; m2
+where, 
+
+A = area of crystal ; m2
+
 t = thickness of crystal; m, and
+
 E = Young's modulus N / m2
    From eqn (i) and (ii) We have, charge
           Q = dAE(&Delta;t/t )       ………(iii)
+
 The charge at the electrodes gives rise to an output voltage E<sub>0</sub>
      Voltage E<sub>0</sub> = Q / Cp             ………(iv)
-where Cp = capacitance between electrodes; F
-Capacitance between electrodes
-       Cp = &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t       ………(v)
-   From Eqn ( I ), ( iv ), ( v )
-      E<sub>0</sub> = Q/Cp = dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t  = (dt/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>) * F/A   ………..(vi)
+
+where 
+
+Cp = capacitance between electrodes; 
+
+F Capacitance between electrodes
+
+Cp = &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t       ………(v)
+  
+From Eqn ( I ), ( iv ), ( v )
+E<sub>0</sub> = Q/Cp = dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>A / t  = (dt/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>) * F/A   ………..(vi)
 	  
  But F / A = P = pressure or stress in N/M²
  
-  E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)  
-                            = g t P                             ……….(viii)
+E<sub>0</sub>= (dF/ &epsilon;<sub>r</sub>&epsilon;<sub>0</sub> ) t P    ……….(vii)                      
+
+= g t P                             ……….(viii)
 							
-  Where g = d / &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>  ……….(ix) 
+Where 
+
+g = d / &epsilon;<sub>r</sub>&epsilon;<sub>0</sub>  ……….(ix) 
   
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N
-                    Now g = E<sub>0</sub> / tP = (E<sub>0</sub> / t) / P  ……….(x)
+ Now g = E<sub>0</sub> / tP = (E<sub>0</sub> / t) / P  ……….(x)      
+
 But E0/ t = electric field strength, V/m
-    Let   &epsilon;= E<sub>0</sub>/ t = electric field
-                               g = electric field / stress = &epsilon;/P   ……….(xi)
+  
+Let   &epsilon;= E<sub>0</sub>/ t = electric field
+                   
+g = electric field / stress = &epsilon;/P   ……….(xi)
 The two main families of constants i.e. the ‘d’ constants and ‘g’ constants are considered. For barium titanate the commonly used constants are d<sub>33</sub> and g<sub>33</sub>
+
 g<sub>33</sub> = field produced in direction 3 / stress applied in direction 3
-          g<sub>33</sub> = (E<sub>0</sub> / t) / ( F / A)     ……….(xii)
-             Voltage Output 
-      E0 =  g<sub>33</sub> × ( F / A) × t   =  g<sub>33</sub> t P      ……….(xiii)    
+       
+g<sub>33</sub> = (E<sub>0</sub> / t) / ( F / A)     ……….(xii)
+            
+Voltage Output 
+    
+E0 =  g<sub>33</sub> × ( F / A) × t   =  g<sub>33</sub> t P      ……….(xiii)    
+
 Thus if g is known for a particular material, the voltage output per unit stress can be calculated by knowing the value of  t.
-
-
 
 ### Properties of Barium Titanate and Quartz:  
 ![*table*](images/table.png)
