@@ -13,7 +13,8 @@ var id1 = 1;
  var wrongAttemptChargeM1= 0,wrongAttemptChargeM2= 0;
  
 function calculateVal(){
-	
+//	$('#exampleModal').load('modal.html'); 
+//	$('#exampleModal').modal('show');
 	 $("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      
@@ -21,6 +22,8 @@ function calculateVal(){
      $("#centerText2").html('CALCULATIONS');
       $("#material").prop('disabled',true);
     
+      
+      
       
 
                  labels2 = '<div class="col-sm-3" id="labelSelected">'

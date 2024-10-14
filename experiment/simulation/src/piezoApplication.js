@@ -139,7 +139,7 @@ function piezoApp(){
 				    +'</div>'
 				    +'<div class="col-sm-3">'
 				  +'<button id="stopButton" class="btn btn-info" style="width:100%;margin-top:10px;" disabled>Reset</button>'
-				 +'<button id="nextResult" class="btn btn-info" style="width:100%;margin-top:10px;" hidden>Result</button>'
+				 +'<button id="nextResult" class="btn btn-danger" style="width:100%;margin-top:10px;" hidden>Result</button>'
 
 				  +'</div>' 
 				  +'<div class="col-sm-3">'
