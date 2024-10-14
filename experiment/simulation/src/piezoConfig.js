@@ -4,11 +4,11 @@ function config1(){
 	$("#main-div-conf").html('');	
      $("#canvas-div").html('');	
      
-     
-	
-     
+ 
       $("#centerText1").html('CONFIGURATION');
       $("#centerText2").html('DIAGRAM');
+      
+      
       var htm = '<img src="images/piezoTransducer.png " class="img-fluid" >'
       $("#canvas-div").html(htm);
       

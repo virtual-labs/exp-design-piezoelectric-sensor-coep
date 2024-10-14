@@ -101,7 +101,10 @@ hr.new3 {
     letter-spacing: 1px;
     font-size: 18px;
 }
-.panel-primary>.panel-heading,.card-header,.modal-header {
+
+
+
+.panel-primary>.panel-heading,.card-header,.modal-header,.modal-header1 {
 background-color:#072647;
 	color:#fff;
 	border-color:blue;	
