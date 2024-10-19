@@ -99,7 +99,7 @@ function config1(){
 	 $("#material").change(function(){
 		
 	   materialSelect = $("#material").val();
-	   console.log(" material "+materialSelect);
+//	   console.log(" material "+materialSelect);
 	   if(materialSelect == 0){
 		$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
@@ -124,19 +124,19 @@ function config1(){
 		  $("#width").attr("disabled",false);
 		  $("#checkConfg").attr("disabled",false);
 	}
-	console.log(" matSel "+matSel);
+//	console.log(" matSel "+matSel);
 	    });
 	    $("#length").change(function(){
 		   length = parseInt($("#length").val());
-		   console.log(" length "+length);
+//		   console.log(" length "+length);
 	     });
 	    $("#thick").change(function(){
 	   thickSelect = parseFloat($("#thick").val());	   	   
-	   console.log("thick"+thickSelect);
+//	   console.log("thick"+thickSelect);
 	   });
 	    $("#width").change(function(){
 	   widthSelect = parseInt($("#width").val());	   	   
-	   console.log("width"+widthSelect);
+//	   console.log("width"+widthSelect);
 	   });
 	   
       
@@ -204,7 +204,7 @@ function config1(){
 						tempCountJson.width = widthSelect; 
 						tempCountJson.height = thickSelect; 
 						counterMasterJson.stdCalculate = tempCountJson;
-						 console.log(counterMasterJson);
+//						 console.log(counterMasterJson);
 		
 		
 		$("#dimension").prop('disabled',true);
