@@ -125,7 +125,7 @@
 						tempCountJson.correctAnswer = ansCount; 
 						tempCountJson.wrongAnswer = wrongAns; 
 						counterMasterJson.questionary = tempCountJson;
-						 console.log(counterMasterJson);
+//						 console.log(counterMasterJson);
 						 $('body').css('padding-right', '0px !important;');
 						 $("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	                     $(".modal-header").html("Success Message");

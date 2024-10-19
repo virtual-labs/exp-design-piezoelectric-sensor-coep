@@ -6,32 +6,32 @@ var correctVal = (counterMasterJson.questionary.correctAnswer/6).toFixed(2);
 var quesPercent = (correctVal*100).toFixed(1);
 quesPercent = parseFloat(quesPercent);
 
-console.log(quesPercent);
+//console.log(quesPercent);
 
 var BariumCalculateActual = parseInt(counterMasterJson.barium.wrongForceRange)+parseInt( counterMasterJson.barium.wrongPressureCalculated)+parseInt(counterMasterJson.barium.wrongOutPutCalculated)+parseInt(counterMasterJson.barium.wrongChargeCalculated);
-console.log("BariumCalculateActual : "+BariumCalculateActual);
+//console.log("BariumCalculateActual : "+BariumCalculateActual);
 var BariumCalculate = 4/(BariumCalculateActual+4);
 var bariumPercent = (BariumCalculate*100).toFixed(1);
 bariumPercent = parseFloat(bariumPercent);
 
-console.log(bariumPercent);
+//console.log(bariumPercent);
 
 var quartzCalculateActual = parseInt(counterMasterJson.Quartz.wrongAttemptForce)+ parseInt(counterMasterJson.Quartz.wrongPressureCalculated)+parseInt(counterMasterJson.Quartz.wrongOutPutCalculated)+parseInt(counterMasterJson.Quartz.wrongChargeCalculated);
-console.log("quartzCalculateActual : "+quartzCalculateActual);
+//console.log("quartzCalculateActual : "+quartzCalculateActual);
 var quartzCalculate = 4/(quartzCalculateActual+4);
 var quartzPercent = (quartzCalculate*100).toFixed(1);
 quartzPercent = parseFloat(quartzPercent);
-console.log(quartzPercent);
+//console.log(quartzPercent);
 
 var sub = counterMasterJson.sensorTesting.totalCnt - counterMasterJson.sensorTesting.sensorBreakTesting;
 var testingPercent = (100*sub/counterMasterJson.sensorTesting.totalCnt).toFixed(1);
 testingPercent = parseFloat(testingPercent);
-console.log(testingPercent);
+//console.log(testingPercent);
 
 
 var totPercent = ((parseFloat(bariumPercent)+parseFloat(quartzPercent)/2)).toFixed(1);
 totPercent = parseFloat(totPercent);
-console.log(totPercent);	
+//console.log(totPercent);	
 	
 var htm = ''
 	+ '<div class="container-fluid">'
