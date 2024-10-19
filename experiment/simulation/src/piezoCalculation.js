@@ -212,7 +212,7 @@ function calculateVal(){
 			pre = text1/area;
 			pres = pre.toFixed(3);
 			pressure = parseFloat(pres);
-			console.log("pressure"+pressure);
+//			console.log("pressure"+pressure);
 			text2 = $("#text2").val();
 			
 			if(text2 == ""){
@@ -341,7 +341,7 @@ function calculateVal(){
 			
 			
 			outputV = parseFloat(outputVo);
-			console.log("output voltage"+outputV);
+//			console.log("output voltage"+outputV);
 			if(text3==""){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
@@ -451,13 +451,13 @@ function calculateVal(){
 			
 			if(materialSelect == 10){
 		chargeVal = 150;
-		console.log("chargeVal"+chargeVal);
+//		console.log("chargeVal"+chargeVal);
 	        }else if(materialSelect == 20){
 		chargeVal = 2;
-		console.log("chargeVal"+chargeVal);
+//		console.log("chargeVal"+chargeVal);
 	        }
 			charge = chargeVal*text1;
-			console.log("charge"+charge);
+//			console.log("charge"+charge);
 			if(text4==""){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
@@ -626,7 +626,7 @@ function calculateVal(){
 			}
 			
 			
-			console.log(counterMasterJson);
+//			console.log(counterMasterJson);
 			
 			if(iteration > 1){
 				$('#compare').prop("hidden",false);
@@ -670,7 +670,7 @@ var ranOutput = parseFloat(ranOutput1);
 						  });	
                               tableReading(masterJson);
 //							   tableReading(masterJson);
-							   console.log(masterJson);
+//							   console.log(masterJson);
 							   
 			}
 			
@@ -701,6 +701,6 @@ var ranOutput = parseFloat(ranOutput1);
 						  }); 
 							 tableReading1(masterJson);	
 //							 masterJsonMaterial.material2 = masterJson1; 
-                             console.log(masterJson);
+//                             console.log(masterJson);
 		}				
 }

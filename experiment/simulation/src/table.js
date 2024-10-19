@@ -2,7 +2,7 @@ var iteration = 0;
 
 function tableReading(masterJson)
 {
-	console.log("before iteration val"+iteration);
+//	console.log("before iteration val"+iteration);
 //	$("#main-div-conf").html('');	
 //     $("#canvas-div").html('');	
      
@@ -62,7 +62,7 @@ function tableReading(masterJson)
 //				
 //				});
 				$("#nextMaterial").click(function() {
-				console.log("iteration val"+iteration);
+//				console.log("iteration val"+iteration);
 				     iteration++;
 				      $("#material").prop('disabled',false);
 				      $(window).scrollTop(0);
@@ -83,7 +83,7 @@ function tableReading(masterJson)
 var tableMainDiv1,calculatePanel1;
 function tableReading1(masterJson)
 {
-	console.log("before iteration val"+iteration);
+//	console.log("before iteration val"+iteration);
 //	$("#main-div-conf").html('');	
 //     $("#canvas-div").html('');	
      
@@ -144,7 +144,7 @@ function tableReading1(masterJson)
 //				});
 				$("#nextMaterial").click(function() {
 					
-				console.log("iteration val"+iteration);
+//				console.log("iteration val"+iteration);
 				     iteration++;
 				      $("#material").prop('disabled',false);
 				      $(window).scrollTop(0);

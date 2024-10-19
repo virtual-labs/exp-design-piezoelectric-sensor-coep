@@ -339,7 +339,7 @@ function piezoApp(){
 				tmp.observedForce = actForce;
 				masterArr.push(tmp);
 				masterJsn.demo = masterArr;
-				console.log(masterJsn);
+//				console.log(masterJsn);
 					 
 					tabCnt++;					
 					}else{
@@ -462,7 +462,7 @@ function piezoApp(){
 						tempCountJson.width = mimWidth; 
 						tempCountJson.height = mimThick; 
 						counterMasterJson.testingParameters = tempCountJson;
-						 console.log(counterMasterJson);
+//						 console.log(counterMasterJson);
 				     
 				     
 				     result();

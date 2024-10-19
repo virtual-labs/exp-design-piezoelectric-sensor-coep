@@ -13,7 +13,7 @@ function reConfig(){
 		matSel = 'Quartz';
 		
 	}
-      console.log("matSel"+matSel);
+//      console.log("matSel"+matSel);
          itr = 1;
 		calculateVal();
 		
