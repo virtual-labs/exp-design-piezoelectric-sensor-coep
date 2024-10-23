@@ -144,6 +144,8 @@ const sortedGraphData2 = combinedData.map(data => data.graphData2);
  
  
  Highcharts.chart('sub-main-div2', {
+	exporting: { enabled: true },
+				credits: { enabled: false},
     chart: {
         type: 'line'
     },
@@ -253,6 +255,8 @@ const sortedGraphData2 = combinedData.map(data => data.graphData2);
  
  
  Highcharts.chart('sub-main-div1', {
+	exporting: { enabled: true },
+				credits: { enabled: false},
     chart: {
         type: 'line'
     },
