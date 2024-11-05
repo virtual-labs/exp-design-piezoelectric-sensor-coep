@@ -142,7 +142,7 @@ function calculateVal(){
 		
 		$("#canvas-div").append(labels1);
 		
-		var htm1 = '<img src="images/piezoDraw.png" class="img-fluid" >'
+		var htm1 = '<img src="images/piezoTransducer.png" class="img-fluid" >'
         $("#main-div-conf").html(htm1);
 		
 //		var forceVal = 0;

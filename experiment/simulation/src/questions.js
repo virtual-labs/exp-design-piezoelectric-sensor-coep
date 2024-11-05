@@ -142,7 +142,7 @@
 					
 					$('#nextLevelConfig').on('click', function() {	
 						 
-	      if(ansCount != 0){
+//	      if(ansCount != 0){
 		$("#main-div-conf").html("");
 		
 //				  $("#main-div-conf").html('<img src="images/loadCellMerge.png"  width="100%" height="60%" class="img-fluid" >');
@@ -150,7 +150,7 @@
 				$("#main-div-conf").html(""); 
 				 $('#material,#materialType').prop('hidden',false); 
 				  config1();
-	} 
+//	} 
 	});	
 					
 });
