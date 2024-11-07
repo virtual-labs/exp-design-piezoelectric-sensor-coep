@@ -1,5 +1,6 @@
 function result(){
 	$("#btnForModal").prop("hidden",true);
+	$("#simDemo").prop("hidden",true);
 	$("#pdfDownload").prop("hidden",false);
 
 
@@ -402,7 +403,7 @@ let chart = Highcharts.chart('graph-div', {
         type: 'pie'
     },
     title: {
-        text: 'Observations'
+        text: ''
     },
     series: [{
         name: 'Observed',
