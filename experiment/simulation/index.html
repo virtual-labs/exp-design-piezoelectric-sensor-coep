@@ -35,7 +35,7 @@
  .button1 {
   background-color: #004A7F;
   -webkit-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
@@ -97,11 +97,8 @@
 	</div>
 	</div>
 	
-	
-	<!-- <div  class="row container" style="margin-top:20px;"> -->
-	<div  class="col-sm-12">
 	<div class="row">
-	<div class="col-sm-3"></div>
+	
 	<div class="col-sm-2" id="materialType" style="margin-top:5px;margin-bottom:5px;"  hidden>
     <label class="labelstyle" id="labelType" >Select Material type: </label>   
     </div>
@@ -113,18 +110,55 @@
 	  
         </select>          
         </div>
-        <div class="col-sm-2">
-         <button type="button" class="btn btn-danger btnMarin button1" data-toggle="modal" style="margin-top:5px;margin-bottom:5px;" data-target="#exampleModal1" id = "btnForModal">
+        <div class="col-sm-6">
+         
+	<button type="button" class="btn btn-danger" data-toggle="modal"  style="margin-top:5px;margin-bottom:5px;" data-target="#readProcedureModal1" id = "simDemo">
+	  Simulation Demo
+	</button>
+	
+        
+        <button type="button" class="btn btn-danger"  id="nextLevelChar" style="margin-top: 5px;margin-bottom:5px;" hidden>Next Level</button>
+        
+        <button type="button" class="btn btn-danger btnMarin button1" data-toggle="modal" style="margin-top:5px;margin-bottom:5px;" data-target="#exampleModal1" id = "btnForModal">
 	  Procedure
 	</button>
-        </div>
-        <div class="col-sm-1">
-        <button type="button" class="btn btn-danger"  id="nextLevelChar" style="width:100%;margin-top: 5px;margin-left:100px;margin-bottom:5px;" hidden>Next Level</input>
-        
-        </div>
+	
             </div> 
          
       </div>
+      
+      
+      
+      <div id="readProcedureModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog  modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header1">
+        <h3 class="modal-title12">DEMO</h3>
+<!--         <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+      </div>
+      <div class="modal-body12">
+ 
+<!--     <video width="90%" id="simVideo" controls> -->
+<!--   <source src="images/simulation.mp4" type="video/mp4"> -->
+  
+<!-- </video> -->
+<center><video id="simVideo" width="90%" controls>
+    <source src="images/simulation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
+      
 <div  class="row container-fluid" id="main-div" >
 <div class="col-lg-6" id="canvas">
 	             <div class="panel panel-primary" >
@@ -262,6 +296,47 @@ Copyrights &copy; COEP - Virtual Lab
 <script type="text/javascript" src="src/result.js"></script>
 
 <script>
+
+
+// Play the video after the page loads
+$("#simDemo").on("click", function(){
+	
+	var video = document.getElementById("simVideo");
+
+	// Define the start and end skip times (in seconds)
+	var skipStart = 0;  // Skip the first 5 seconds
+	var skipEnd = 0;    // Skip the last 5 seconds
+
+// 	video.onloadedmetadata = function() { 
+	    // Get the duration of the video
+	    var videoDuration = video.duration;
+
+	    // Ensure the video plays between skipStart and (duration - skipEnd)
+	    video.currentTime = skipStart;
+
+	    // Event listener to pause the video when it reaches the end limit (video duration - skipEnd)
+	    video.ontimeupdate = function() {
+	        if (video.currentTime >= videoDuration - skipEnd) {
+	            video.pause();
+	        }
+	    };
+
+	    // Prevent seeking outside the allowed time range
+	    video.addEventListener('seeking', function(event) {
+	        // If seeking before the start time or after the allowed end time, reset the current time
+	        if (video.currentTime < skipStart) {
+	            video.currentTime = skipStart;
+	        } else if (video.currentTime > videoDuration - skipEnd) {
+	            video.currentTime = videoDuration - skipEnd;
+	        }
+	    });
+// 	};
+	
+	video.play();
+})
+</script>
+
+<script>
 $('#myModal').on('show.bs.modal', function (e) {
 	console.log("modal called");
 	$('body').css('padding-right', '0px !important;');
@@ -319,5 +394,7 @@ htm+= '<h3>Basic Knowledge:</h3>'
 $(".modal-body11").html(htm);
 $(".modal-title1").html("Procedure");
 </script>
+
+
 
 </html>

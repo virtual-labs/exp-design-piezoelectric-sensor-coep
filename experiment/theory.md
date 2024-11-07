@@ -6,7 +6,7 @@ A piezoelectric transducer (also known as a piezoelectric sensor) is a device th
 A transducer can be anything that converts one form of energy to another. A piezo-electric material is one in which an electric potential appears across certain surfaces of a crystal if the dimensions of the crystal are changed by the application of a mechanical force. This potential is produced by the displacement of charges. The effect is reversible, i.e., conversely, if a varying potential is applied to the proper axis of the crystal, it will change the dimensions of the crystal thereby deforming it. This effect is known as piezo-electric effect. Elements exhibiting piezo-electric qualities are called as electro- resistive elements.
 Piezoelectric Effect is the ability of certain materials to generate an electric charge in response to applied mechanical stress. The word Piezoelectric is derived from the Greek piezein, which means to squeeze or press, and piezo, which is Greek for “push”.
 One of the unique characteristics of the piezoelectric effect is that it is reversible, meaning that materials exhibiting the direct piezoelectric effect (the generation of electricity when stress is applied) also exhibit the converse piezoelectric effect (the generation of stress when an electric field is applied).
-When piezoelectric material is placed under mechanical stress, a shifting of the positive and negative charge centers in the material takes place, which then results in an external electrical field. When reversed, an outer electrical field either stretches or compresses the piezoelectric material.
+When piezoelectric material is placed under mechanical stress, a shifting of the positive and negative charge centres in the material takes place, which then results in an external electrical field. When reversed, an outer electrical field either stretches or compresses the piezoelectric material.
 The piezoelectric effect is very useful within many applications that involve  : 
 -	Production and detection of sound, 
 -	Generation of high voltages,
@@ -46,11 +46,11 @@ The force F causes a change in thickness of the crystal.
 
 where, 
 
-A = area of crystal ; m2
+A = area of crystal ; m<sup>2</sup>
 
 t = thickness of crystal; m, and
 
-E = Young's modulus N / m2
+E = Young's modulus N / m<sup>2</sup>
    From eqn (i) and (ii) We have, charge
           Q = dAE(&Delta;t/t )       ………(iii)
 
@@ -106,11 +106,7 @@ Thus if g is known for a particular material, the voltage output per unit stress
 - When compared to all other materials quartz has the highest stability, but provides low output. Whereas the material called Rochelle salt provides high output but its stability is low and is sensitive to humidity and temperature variations. Therefore, it requires some protection against moisture and the operating range of temperature is below 45°C.
 - Since the barium titanate (one of the piezoelectric materials) is polycrystalline, it can be formed into different types of shapes and sizes. Also, these materials have a very high dielectric constant.
 - Synthetic materials possess very high voltage sensitivity.
-- The natural crystals must have,
-- Can be able to withstand higher stresses,
-- Provides good frequency response,
-- Have low leakage, and
-- Have very high thermal and mechanical stability.
+- The natural crystals must have low leakage and very high thermal and mechanical stability.
 - The piezoelectric crystals have high input impedance.
 
 ### Construction :
