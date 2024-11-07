@@ -14,14 +14,16 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A piezoelectric transducer is an ignition source for a cigarette.",
+      "question": "What is the primary function of a piezoelectric transducer?",
       "answers": {
-        "a": "True",
-        "b": "False"
+        "a": "To measure temperature",
+        "b": "To convert mechanical energy into electrical energy",
+		"c": "To convert electrical energy into chemical energy",
+		"d": "To measure pressure in gases"
    
       },
      
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
