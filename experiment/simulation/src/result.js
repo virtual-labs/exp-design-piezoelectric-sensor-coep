@@ -158,7 +158,7 @@ var htm = ''
 //	+ '<label class=""><b>Thickness : mm</b></label>'
 	+ '</div>'
 	+ '<div class="col-sm-2">'
-	+ '<label class=""><b>Material : '+counterMasterJson.testingParameters.material+' mm</b></label>'
+	+ '<label class=""><b>Material : '+counterMasterJson.testingParameters.material+' </b></label>'
 	+ '</div>'
 	
 	+ '<div class="col-sm-2">'
