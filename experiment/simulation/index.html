@@ -79,7 +79,7 @@
         margin-right: 10px;
         margin-top:7px;
         float:right;
-        margin-bottom:10px;
+        margin-bottom:2px;
         padding: 7px; 
         border:none; 
         border-radius: 5px;
@@ -99,10 +99,13 @@
 	
 	<div class="row container-fluid">
 	
-	<div class="col-sm-2" id="materialType" style="margin-top:10px;margin-bottom:5px;"  hidden>
-    <label class="labelstyle" id="labelType" >Select Material type: </label>   
+	<div class="col-sm-1">
+	</div>
+	
+	<div class="col-sm-2" id="materialType" style="margin-top:14px;margin-bottom:5px;"  hidden>
+    <center><label class="labelstyle" id="labelType" >Select Material type: </label></center>   
     </div>
-     <div class="col-sm-4">
+     <div class="col-sm-3">
 	   <select  class="form-control selectConf" id="material"  style="margin-top:10px;margin-bottom:5px;" hidden>
 	   <option value="0">--- Select the Material --- </option>'
 	   <option value="10" id="BariumTitanate" >Barium titanate </option>
@@ -112,9 +115,11 @@
         </div>
         
         <div class="col-sm-6">
-		     <button type="button" class="btn btn-danger btn1" id = "pdfDownload" hidden>
+		    
+		     <button type="button" class="btn btn-danger btn1" style = "float:right;" id = "pdfDownload" hidden>
 			  Download Report	 
 			</button>
+		    
 		    <button type="button" class="btn btn-danger btn1"  id="nextLevelChar" hidden>Next Level</button>     
 		
 		    <button type="button" class="btn btn-danger btnMarin button1 btn1" data-toggle="modal" data-target="#exampleModal1" id = "btnForModal">
@@ -124,7 +129,8 @@
 			<button type="button" class="btn btn-danger btn1" data-toggle="modal"  data-target="#readProcedureModal1" id = "simDemo">
 			  Simulation Demo
 			</button>
-	
+	        
+	        
         </div> 
          
       </div>
