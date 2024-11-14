@@ -29,7 +29,6 @@ The voltage is E=Q/C.
 The piezo-electric effect is direction sensitive. A tensile force produces a voltage of one polarity while a compressive force produces a voltage of opposite polarity.
 
 ![*piezoTransducer*](images/piezoTransducer.png)
-
 ![*piezoTransducer*](images/xyzAxis.png)
 
 The magnitude and polarity of the induced surface charges are proportional to the magnitude and direction of the applied force F. The polarity of induced charges depends upon the direction of applied force.
