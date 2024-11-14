@@ -45,8 +45,7 @@ F = applied force, N
 
 The force F causes a change in thickness of the crystal.
 
-![*formula*](images/formula.png)
-
+F = (AE/t)&times; &Delta;t  ………(ii)
 where, 
 
 A = area of crystal ; m<sup>2</sup>
