@@ -2,7 +2,8 @@ function result(){
 	$("#btnForModal").prop("hidden",true);
 	$("#simDemo").prop("hidden",true);
 	$("#pdfDownload").prop("hidden",false);
-
+    $("#materialType").prop("hidden",false);
+$('#labelType').text('');
 
 function generatePDF() {
     // Select the div by its ID
@@ -110,7 +111,7 @@ var htm = ''
 
 	+ '<div class="col-md-4">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" style="font-size:18px;"><center><b>Piezo electric transducer experiment is completed!!</b>'
+	+ ' <div class="panel-body remark" style="font-size:18px;"><center><b>Piezo electric transducer experiment completed successfully!!</b>'
 //	+ '<br> <b>Satisfactory performance</b></center>
 	 +'</div>'
 	+ '</div>'
