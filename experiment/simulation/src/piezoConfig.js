@@ -104,7 +104,7 @@ function config1(){
 		$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Select Material type");
+			$("#MsgModal").html("Select material type");
 //		$("#modelMsg").html("select material type .");
 	}
 	   else if(materialSelect == 10){
@@ -154,7 +154,7 @@ function config1(){
 		$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Select Material");
+			$("#MsgModal").html("Select material");
 //		$("#modelMsg").html("<b class='boldTextRed'>Select material </b>");
 
 	}else if(lengthSelect==0){
@@ -222,7 +222,7 @@ function config1(){
 	        $("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
-			$("#MsgModal").html("Configured Successfully");
+			$("#MsgModal").html("Configured successfully");
 			
 		
        
