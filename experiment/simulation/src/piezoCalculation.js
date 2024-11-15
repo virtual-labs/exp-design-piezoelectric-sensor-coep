@@ -153,7 +153,7 @@ function calculateVal(){
 			  $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");
+			$("#MsgModal").html("Enter the values");
 				
 				
 			}else{
@@ -166,7 +166,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Avoid Duplicates");
+			$("#MsgModal").html("Avoid duplicates");
 //					   alert("Avoid Duplicates");
 					  arrWeight.splice(index,1);
 					  $("#submit_load1").prop('disabled',false);
@@ -188,7 +188,7 @@ function calculateVal(){
 		    $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter Force between 1 to 50 (N)");
+			$("#MsgModal").html("Enter force between 1 to 50 (N)");
 			
 			if(itr==5){
 				if(materialSelect == 10){		
@@ -220,7 +220,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");
+			$("#MsgModal").html("Enter the values");
 				
 			}else{
 				text2 = parseFloat($("#text2").val());
@@ -239,7 +239,7 @@ function calculateVal(){
 				  $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Entered value is Incorrect.<br>Try again");	
+			$("#MsgModal").html("Entered value is incorrect.<br>Try again");	
 					
 					if(itr==5){
 				if(materialSelect == 10){		
@@ -261,7 +261,7 @@ function calculateVal(){
 				 $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("<b>Formula : Pressure = F/A, where A = length &times; width</b>");
+			$("#MsgModal").html("<b>Formula : <br>Pressure = F/A, <br>where, A = length &times; width</b>");
 			if(itr==5){
 				if(materialSelect == 10){		
 				    wrongAttemptPressureM1++;
@@ -294,7 +294,7 @@ function calculateVal(){
 			$("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
-			$("#MsgModal").html("Correct Answer is " + pressure);
+			$("#MsgModal").html("Correct answer is " + pressure);
 //					alert("correct answer is " + pressure );
 					
 //					 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + axialCal+"</b>");
@@ -346,7 +346,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");	
+			$("#MsgModal").html("Enter the values");	
 			}else{
 			text3 = parseFloat($("#text3").val());	
 			if (id2 <= 3) {
@@ -364,7 +364,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Entered value is Incorrect.<br>Try again");
+			$("#MsgModal").html("Entered value is incorrect.<br>Try again");
 				
 				if(itr==5){
 				if(materialSelect == 10){		
@@ -387,7 +387,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("<b>Formula : voltage sensitivity &times; pressure &times; thickness  </b>");
+			$("#MsgModal").html("<b>Formula : <br>voltage sensitivity &times; pressure &times; thickness  </b>");
 			
 			if(itr==5){
 				if(materialSelect == 10){		
@@ -418,7 +418,7 @@ function calculateVal(){
 					$("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
-			$("#MsgModal").html("Correct Answer is " + outputV);
+			$("#MsgModal").html("Correct answer is " + outputV);
 			
 			if(itr==5){
 				if(materialSelect == 10){		
@@ -462,7 +462,7 @@ function calculateVal(){
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");		
+			$("#MsgModal").html("Enter the values");		
 			}else{
 			text4 = parseFloat($("#text4").val());
 				if (id3 <= 3) {
@@ -485,7 +485,7 @@ function calculateVal(){
 				$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Entered value is Incorrect.<br>Try again");	
+			$("#MsgModal").html("Entered value is incorrect.<br>Try again");	
 //				alert("Entered value is incorrect.Try it again.");
 //				 $("#modelMsg").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
 //				 $("body").css("padding","0px 0px 0px 0px");
@@ -508,7 +508,7 @@ function calculateVal(){
 				 $(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#23435c");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("<b>Formula : Charge = d &times; F</b>");
+			$("#MsgModal").html("<b>Formula : <br>Charge = d &times; F</b>");
 			
 			if(itr==5){
 				if(materialSelect == 10){		
@@ -546,7 +546,7 @@ function calculateVal(){
 					$("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	        $(".modal-header").html("Success Message");
             $(".modal-header").css("background","#5cb85c");
-			$("#MsgModal").html("Correct Answer is " + charge);
+			$("#MsgModal").html("Correct answer is " + charge);
 //					alert("correct answer is " + charge );
 					
 //					 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + axialCal+"</b>");

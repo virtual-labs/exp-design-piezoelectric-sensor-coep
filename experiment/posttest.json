@@ -15,7 +15,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following is the output voltage formula of a Quartz transducer?",
+      "question": "Which of the following is the output voltage formula of a quartz transducer?",
       "answers": {
         "a": "V<sub>0</sub>= Q/C",
         "b": "V<sub>0</sub>=C/Q",
@@ -27,7 +27,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A Piezoelectric  transducer  has a crystal capacitance of 10<sup>-9</sup> F, capable capacitance of 5 X 10<sup>-10</sup> F, and charge sensitivity of 15 x 10<sup>-6</sup> C/cm. If the input resistance of the oscilloscope is 1 MΩ in parallel with C = 15 X 10<sup>-10</sup> F, then what will be the voltage sensitivity?",
+      "question": "A piezoelectric  transducer  has a crystal capacitance of 10<sup>-9</sup> F, capable capacitance of 5 X 10<sup>-10</sup> F, and charge sensitivity of 15 x 10<sup>-6</sup> C/cm. If the input resistance of the oscilloscope is 1 MΩ in parallel with C = 15 X 10<sup>-10</sup> F, then what will be the voltage sensitivity?",
       "answers": {
         "a": "2000 V/cm",
         "b": "3000 V/cm",
@@ -51,7 +51,7 @@
       "difficulty": "beginner"
     },
 	{
-      "question": "A Piezoelectric type accelerometer has a sensitivity of 100 mV/g. A transducer subjected to a constant acceleration of 5g. The steady state output transducer will be",
+      "question": "A piezoelectric type accelerometer has a sensitivity of 100 mV/g. A transducer subjected to a constant acceleration of 5g. The steady state output transducer will be",
       "answers": {
         "a": "0",
         "b": "100 mV",

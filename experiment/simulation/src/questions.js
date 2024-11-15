@@ -97,7 +97,7 @@
 			$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Please Attempt all the questions");
+			$("#MsgModal").html("Please attempt all the questions");
 //							alert('Please attempt all the questions');
 //							$("body").css("padding","0px");
 //							$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions.</b>");
@@ -130,7 +130,7 @@
 						 $("#btnModal").removeClass("btn-danger").addClass("btn-success");
 	                     $(".modal-header").html("Success Message");
                          $(".modal-header").css("background","#5cb85c");
-			             $("#MsgModal").html("<b>Test Submitted Successfully.<br> Number of Correct Answers :"+ansCount+"</b>");
+			             $("#MsgModal").html("<b>Test submitted successfully.<br> Number of correct answers :"+ansCount+"</b>");
 						 
 //						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully .<br> Number of Correct Answers  : " + ansCount+"</b>");
                          $('#nextLevelConfig').prop('hidden',false);

@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " A transducer that converts measure and into the form of pulse is known as___",
+      "question": " A transducer that converts measure into the form of pulse is known as___",
       "answers": {
          "a": "Active transducer",
         "b": "Analog transducer",
@@ -27,7 +27,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "In piezoelectric transducer, the polarity of produced charge depends upon _____",
+      "question": "In a piezoelectric transducer, the polarity of produced charge depends upon _____",
       "answers": {
         "a": "The direction of applied stress",
         "b": "Piezoelectric material property",
