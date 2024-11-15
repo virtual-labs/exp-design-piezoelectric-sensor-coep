@@ -162,7 +162,7 @@ function piezoApp(){
 						$(".modal-header").html("Error Message");
 						$(".modal-header").css("background","#9c1203b0");
 						$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-						$("#MsgModal").html("Select the Values");
+						$("#MsgModal").html("Select the values");
 					}else{
 						
 						if(mimLen==55.4 && mimThick==0.46 && mimWidth==23.4){
@@ -260,7 +260,7 @@ function piezoApp(){
 						$(".modal-header").html("Error Message");
 						$(".modal-header").css("background","#9c1203b0");
 						$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-						$("#MsgModal").html("Select Appropriate Dimensions");
+						$("#MsgModal").html("Select appropriate dimensions");
 						wrongSelect++;
 						}
 					}
@@ -281,7 +281,7 @@ function piezoApp(){
 						$(".modal-header").html("Error Message");
 			$(".modal-header").css("background","#9c1203b0");
 			$("#btnModal").removeClass("btn-success").addClass("btn-danger");
-			$("#MsgModal").html("Enter the Values");
+			$("#MsgModal").html("Enter the values");
 					}else{
 						
 						
