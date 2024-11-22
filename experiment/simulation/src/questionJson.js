@@ -85,19 +85,19 @@ QuestionsJSON = {
 
 				"QUES": [{
 					
-					"QC": "A piezoelectric transducer has a _________",
+					"QC": "The output voltage of a piezoelectric transducer is",
 					"ANS": [{
 						"ANSID": true,
-						"content": "high sensitivity"
+						"content": "Directly proportional to the applied pressure"
 					}, {
 						"ANSID": false,
-						"content": "very high sensitivity"
+						"content": "Inversely proportional to the applied pressure"
 					}, {
 						"ANSID": false,
-						"content": "low sensitivity"
+						"content": "Constant regardless of the applied pressure"
 					}, {
 						"ANSID": false,
-						"content": "zero sensitivity"
+						"content": "Exponentially related to the applied pressure"
 					}]
 					
 				}]
