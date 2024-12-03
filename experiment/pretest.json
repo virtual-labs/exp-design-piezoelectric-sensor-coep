@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " A transducer that converts measure into the form of pulse is known as___",
+      "question": " A transducer that converts measurements into pulses is called a ___",
       "answers": {
          "a": "Active transducer",
         "b": "Analog transducer",
