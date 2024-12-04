@@ -2,15 +2,15 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " A transducer that converts measurements into pulses is called a ___",
+      "question": " piezoelectric transducers are",
       "answers": {
-         "a": "Active transducer",
-        "b": "Analog transducer",
-        "c": "Digital transducer",
-        "d": "Pulse transducer"
+         "a": "Devices that convert electrical energy into thermal energy ",
+        "b": "Devices that convert mechanical energy into electrical energy ",
+        "c": "Devices that amplify electrical signals",
+        "d": "Devices that measure fluid pressure directly"
       },
       
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
