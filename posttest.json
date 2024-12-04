@@ -1,0 +1,69 @@
+
+ {
+  "version": 2.0,
+  "questions": [
+    {
+      "question": " Piezoelectric strain constant d for given stress x and electric field E is___",
+      "answers": {
+         "a": "d = E/x",
+        "b": "d = E.x",
+        "c": "d = x/E",
+        "d": "d = E+x"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is the output voltage formula of a quartz transducer?",
+      "answers": {
+        "a": "V<sub>0</sub>= Q/C",
+        "b": "V<sub>0</sub>=C/Q",
+        "c": "V<sub>0</sub>=Q+C",
+        "d": "V<sub>0</sub>=Q-C"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A piezoelectric  transducer  has a crystal capacitance of 10<sup>-9</sup> F, capable capacitance of 5 X 10<sup>-10</sup> F, and charge sensitivity of 15 x 10<sup>-6</sup> C/cm. If the input resistance of the oscilloscope is 1 MΩ in parallel with C = 15 X 10<sup>-10</sup> F, then what will be the voltage sensitivity?",
+      "answers": {
+        "a": "2000 V/cm",
+        "b": "3000 V/cm",
+        "c": "4000 V/cm",
+        "d": "5000 V/cm"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Quartz‘s mechanical quality factor is _____",
+      "answers": {
+        "a": "= 10<sup>5</sup>",
+        "b": "< 10<sup>5</sup>",
+        "c": "> 10<sup>5</sup>",
+        "d": "None of these"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "A piezoelectric type accelerometer has a sensitivity of 100 mV/g. A transducer subjected to a constant acceleration of 5g. The steady state output transducer will be",
+      "answers": {
+        "a": "0",
+        "b": "100 mV",
+        "c": "0.5 V",
+        "d": "5 V"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+	
+
+  
+  ]
+}

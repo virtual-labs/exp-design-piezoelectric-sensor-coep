@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Piezo-electric transducer </title>
+<meta charset="ISO-8859-1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" > -->
+    <link rel="stylesheet" href=" https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/mainPage.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/piezoElectric.css">
+	<link rel="stylesheet" href="css/analysis.css">
+
+
+
+</head>
+
+<style>
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('font/digital-7.ttf');
+}
+.modal-header1{text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    }
+ 
+ .button1 {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+ padding: 5px 10px; 
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 20px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}   
+    
+  .btn1 {
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top:7px;
+        float:right;
+        margin-bottom:2px;
+        padding: 7px; 
+        border:none; 
+        border-radius: 5px;
+        }   
+</style>
+
+<body >
+
+<header>
+		<img class="COEPLogo" src='images/COEPlogo.png' />
+		<img class="VlabLogo" src='images/vlablogo.jpg' />
+		<span id="colgName">COEP TECHNOLOGICAL UNIVERSITY PUNE</span>		
+		
+	</header>
+	
+
+	
+	<div class="row container-fluid">
+	
+	<div class="col-sm-1">
+	</div>
+	
+	<div class="col-sm-2" id="materialType" style="margin-top:14px;margin-bottom:5px;"  hidden>
+    <center><label class="labelstyle" id="labelType" >Select Material type: </label></center>   
+    </div>
+     <div class="col-sm-3">
+	   <select  class="form-control selectConf" id="material"  style="margin-top:10px;margin-bottom:5px;" hidden>
+	   <option value="0">--- Select the Material --- </option>'
+	   <option value="10" id="BariumTitanate" >Barium titanate </option>
+	   <option value="20" id="Quartz">Quartz</option>
+	  
+        </select>          
+        </div>
+        
+        <div class="col-sm-6">
+		    
+		     <button type="button" class="btn btn-danger btn1" style = "float:right;" id = "pdfDownload" hidden>
+			  Download Report	 
+			</button>
+		    
+		    <button type="button" class="btn btn-danger btn1"  id="nextLevelChar" hidden>Next Level</button>     
+		
+		    <button type="button" class="btn btn-danger btnMarin button1 btn1" data-toggle="modal" data-target="#exampleModal1" id = "btnForModal">
+			  Procedure
+			</button>
+			
+			<button type="button" class="btn btn-danger btn1" data-toggle="modal"  data-target="#readProcedureModal1" id = "simDemo">
+			  Simulation Demo
+			</button>
+	        
+	        
+        </div> 
+         
+      </div>
+      
+      
+      
+      <div id="readProcedureModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog  modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header1">
+        <h3 class="modal-title12">DEMO</h3>
+<!--         <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+      </div>
+      <div class="modal-body12">
+ 
+<!--     <video width="90%" id="simVideo" controls> -->
+<!--   <source src="images/simulation.mp4" type="video/mp4"> -->
+  
+<!-- </video> -->
+<center><video id="simVideo" width="90%" controls>
+    <source src="images/simulation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video></center>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
+      
+<div  class="row container-fluid" id="main-div" >
+<div class="col-lg-6" id="canvas">
+	             <div class="panel panel-primary" >
+	      			<div class="panel-heading " id="panelHeading2" ><center id="centerText2"> DIAGRAM</center>
+	      			</div>
+<!-- 	      			<label  id="counter"></label> -->
+	      			<div class="panel-body" id="canvas-div" >
+	      			<img src="images/piezoElectric.png " width = 90% class="img-fluid" >
+	      			</div>
+					<div class="panel-body" id="sub-main-div1" >
+	      			</div>
+	      			
+	   			</div>
+	       </div>
+	<div class="col-lg-6" id="canvas2" >
+				<div class="panel panel-primary">
+	      			<div class="panel-heading " id="panelHeading1"><center id="centerText1">BASIC KNOWLEDGE </center>
+	      			</div>
+	     			<div class="panel-body" id="main-div-conf" >
+	     			        
+
+	     			</div>
+	     		<div class="panel-body" id="sub-main-div2" >
+	      			</div>  
+	     		</div>
+	   	</div>
+	   
+
+			
+	</div>
+	
+	<!-- 	Model Start -->
+	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+		<h4 class="modal-title" style="font-weight: 600;"></h4>
+          <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+          <p id="MsgModal"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btnModal" class="btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!--   Model end -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Procedure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body1" style="    overflow-y: scroll;height:600px;margin-left:10px; ">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header1" >
+        <h5 class="modal-title1" id="exampleModalLabel">Procedure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body11" style="    overflow-y: scroll;height:600px;margin-left:10px; ">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<footer>
+Copyrights &copy; COEPTECH - Virtual Labs
+</footer>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+<!-- https://code.jquery.com/jquery-3.5.1.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+<script type="text/javascript" src="lib/raphael.js"></script>
+<script type="text/javascript" src="lib/raphael.min.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+ 
+ 
+  <script type="text/javascript" src="src/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+<script type="text/javascript" src="src/questionJson.js"></script>
+<script type="text/javascript" src="src/questions.js"></script>
+<script type="text/javascript" src="src/piezoConfig.js"></script>
+<script type="text/javascript" src="src/piezoCalculation.js"></script>
+<script type="text/javascript" src="src/table.js"></script>
+<script type="text/javascript" src="src/compareTable&graph.js"></script>
+<script type="text/javascript" src="src/secondConfig.js"></script>
+<script type="text/javascript" src="src/graph.js"></script>
+<script type="text/javascript" src="src/charectarizationGraph.js"></script>
+<script type="text/javascript" src="src/animatePiezo.js"></script>
+<script type="text/javascript" src="src/piezoApplication.js"></script>
+<script type="text/javascript" src="src/result.js"></script>
+
+<script>
+$('#readProcedureModal1').click(function(){
+	 $('video').each(function(){
+		    $(this).get(0).pause();
+		  })
+	})
+
+$("#simDemo").on("click", function(){
+	
+	var video = document.getElementById("simVideo");
+
+	// Define the start and end skip times (in seconds)
+	var skipStart = 0;  // Skip the first 5 seconds
+	var skipEnd = 0;    // Skip the last 5 seconds
+
+//	video.onloadedmetadata = function() { 
+	    // Get the duration of the video
+	    var videoDuration = video.duration;
+
+	    // Ensure the video plays between skipStart and (duration - skipEnd)
+	    video.currentTime = skipStart;
+
+	    // Event listener to pause the video when it reaches the end limit (video duration - skipEnd)
+	    video.ontimeupdate = function() {
+	        if (video.currentTime >= videoDuration - skipEnd) {
+	            video.pause();
+				video.currentTime = skipStart;
+	        }
+	    };
+
+	    // Prevent seeking outside the allowed time range
+	    video.addEventListener('seeking', function(event) {
+	        // If seeking before the start time or after the allowed end time, reset the current time
+	        if (video.currentTime < skipStart) {
+	            video.currentTime = skipStart;
+	        } else if (video.currentTime > videoDuration - skipEnd) {
+	            //video.currentTime = videoDuration - skipEnd;
+				video.currentTime = skipStart;
+	        }
+	    });
+//	};
+	
+	video.play();
+})
+
+
+</script>
+
+<script>
+$('#myModal').on('show.bs.modal', function (e) {
+	console.log("modal called");
+	$('body').css('padding-right', '0px !important;');
+});
+</script>
+
+<script>
+
+var htm = '';
+
+htm+= '<h3>Basic Knowledge:</h3>'
++'<ul>'
++'<li>Answer all the questions and click on "Submit Test" button</li>'
++'</ul>'
+
++'<h3>Configuration:</h3>'
++'<ul>'
++'<li>Select the material</li>'
++'<li>Select length, thickness, width of material and configure</li>'
++'<li>Click on "Next Level"</li>'
++'</ul>'
+
++'<h3>Calculations:</h3>'
++'<ul>'
++'<li>Enter the Force between 1 to 50 (N)</li>'
++'<li>Calculate pressure and enter its value; if the value is correct, further calculations will be enabled. If the value is incorrect, the formula followed by the correct answer will be displayed after 3 attempts</li>'
++'<li>Calculate output voltage and enter its value; if the value is correct, further calculations will be enabled. If the value is incorrect, the formula followed by the correct answer will be displayed after 3 attempts</li>'
++'<li>Calculate charge Q. After calculating the correct answer, click on the Next Reading button and similarly calculate the other 4 readings for the same material</li>'
++'<li>After calculating 5 readings, select another material from the top and repeat the same process by selecting another material</li>'
++'<li>After recording 5 readings for the new material, click the "Compare with Previous Material" button</li>'
++'</ul>'
+
++'<h3>Standard Observations:</h3>'
++'<ul>'
++'<li>Here, you can compare the difference between the standard calculations for both materials</li>'
++'<li>Click "Next Level" at the top</li>'
++'</ul>'
+
++'<h3>Actual Observations:</h3>'
++'<ul>'
++'<li>Here, you can find the difference between standard values and observed values for both materials</li>'
++'<li>Click "Next Level" at the top</li>'
++'</ul>'
+
++'<h3>Testing:</h3>'
++'<ul>'
++'<li>Select the material for testing</li>'
++'<li>Select appropriate dimensions (i.e., length, width, and height) and click on check configuration</li>'
++'<li>If the selected parameters are correct, the Height and Weight fields will be enabled, while the remaining configuration parameters above will be disabled</li>'
++'<li>Enter a height between 1 and 100 cm, input the appropriate weight, and click "Start." You will then see the force required on the digital meter</li>'
++'<li>Click on "Reset" button and take trials for different heights and weights</li>'
++'<li>If the sensor breaks due to certain parameters, click the "Reselect" button to adjust the configuration and repeat the process, taking different trials. After recording 5 readings, you can proceed to the result</li>'
++'</ul>'
+
+$(".modal-body11").html(htm);
+$(".modal-title1").html("Procedure");
+</script>
+
+
+
+</html>

@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": " piezoelectric transducers are",
+      "answers": {
+         "a": "Devices that convert electrical energy into thermal energy ",
+        "b": "Devices that convert mechanical energy into electrical energy ",
+        "c": "Devices that amplify electrical signals",
+        "d": "Devices that measure fluid pressure directly"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary function of a piezoelectric transducer?",
+      "answers": {
+        "a": "To measure temperature",
+        "b": "To convert mechanical energy into electrical energy",
+		"c": "To convert electrical energy into chemical energy",
+		"d": "To measure pressure in gases"
+   
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a piezoelectric transducer, the polarity of produced charge depends upon _____",
+      "answers": {
+        "a": "The direction of applied stress",
+        "b": "Piezoelectric material property",
+        "c": "Transducer orientation",
+        "d": "All the above"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "PZT-5 is formed by doping PZT with",
+      "answers": {
+        "a": "Donor ions",
+        "b": "Acceptor ions",
+        "c": "Nitrogen",
+        "d": "All of these"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Piezoelectric voltage constant g defines the relation between",
+      "answers": {
+        "a": "Internal stress and magnetic field",
+        "b": "External stress and applied electric field",
+        "c": "External stress and induced electric field",
+        "d": "Internal stress and induced electric field"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  
+  ]
+}
