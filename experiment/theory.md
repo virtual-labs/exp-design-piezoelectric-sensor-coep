@@ -29,7 +29,7 @@ The modes can be :
 	
 The mode of motion affected depends on the shape of the body relative to the crystal axis and location of the electrodes. Mechanical deformation generates a charge and this charge appears as a voltage across the electrodes.
 
-The voltage is E = Q /C.
+The voltage is E = Q / C.
 
 The piezoelectric effect is direction-sensitive. A tensile force produces a voltage of one polarity, while a compressive force produces a voltage of opposite polarity.
 
@@ -38,7 +38,7 @@ The piezoelectric effect is direction-sensitive. A tensile force produces a volt
 
 The magnitude and polarity of the induced surface charges are proportional to the magnitude and direction of the applied force F. The polarity of induced charges depends upon the direction of applied force.
 
-Charge Q = d x F coulomb ………(i)
+Charge Q = d &times; F coulomb ………(i)
 
 where, 
 
@@ -48,7 +48,7 @@ F = applied force N,
 
 The force F causes a change in thickness of the crystal.
 
-F = (AE/t)&times; &Delta;t  ………(ii) <br>
+F = ( A E / t ) &times; &Delta; t  ………(ii) <br>
 where,<br> 
 
 A = area of crystal (m<sup>2</sup>),
@@ -59,26 +59,24 @@ E = Young's modulus (N / m<sup>2</sup>)
 
 From eqn (i) and (ii) we have, charge <br><br>
 
-Q = d A E(&Delta; t/ t )       ………(iii)
+Q = d A E( &Delta; t / t )       ………(iii)
 
 The charge at the electrodes gives rise to an output voltage E<sub>0</sub>
 
-Voltage E<sub>0</sub> = Q / Cp             ………(iv)
+Voltage E<sub>0</sub> = Q / C<sub>p</sub>             ………(iv)
 
 where, 
 
-Cp = capacitance between electrodes,
+C<sub>p</sub> = capacitance between electrodes,
 
-F Capacitance between electrodes
-
-Cp = &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t       ………(v)
+C<sub>p</sub> = &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t       ………(v)
   
 From Eqn ( i ), ( iv ), ( v ) <br><br>
-E<sub>0</sub> = Q / C p = d F/ &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t  = (d t / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> ) &times; F / A   ………..(vi)
+E<sub>0</sub> = Q / C<sub>p</sub> = d F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t  = (d t / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> ) &times; F / A   ………..(vi)
 	  
- But F / A = P = pressure or stress in N/M²
+ But F / A = P = pressure or stress in N/m²
  
-E<sub>0</sub>= (d F/ &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> ) t P    ……….(vii)                      
+E<sub>0</sub>= (d t F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A )    ……….(vii)                      
 
 = g t P                             ……….(viii)
 							
@@ -87,23 +85,23 @@ Where,
 g = d / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub>  ……….(ix) 
   
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N <br>
- Now g = E<sub>0</sub> / t P = (E<sub>0</sub> / t) / P  ……….(x)      
+ Now g = E<sub>0</sub> / t P = ( E<sub>0</sub> / t ) / P  ……….(x)      
 <br>
-But E0/ t = electric field strength, V/m
+But E<sub>0</sub>/ t = electric field strength, V/m
   
-Let   &epsilon;= E<sub>0</sub>/ t = electric field
+Let   &epsilon; = E<sub>0</sub> / t = electric field
                    
-g = electric field / stress = &epsilon;/P   ……….(xi)
+g = electric field / stress = &epsilon; / P   ……….(xi)
 
 The two main families of constants i.e. the ‘d’ constants and ‘g’ constants are considered. For barium titanate the commonly used constants are d<sub>33</sub> and g<sub>33</sub>
 
 g<sub>33</sub> = field produced in direction 3 / stress applied in direction 3
        
-g<sub>33</sub> = (E<sub>0</sub> / t) / ( F / A)     ……….(xii)
+g<sub>33</sub> = ( E<sub>0</sub> / t) / ( F / A )     ……….(xii)
             
 Voltage Output 
     
-E0 =  g<sub>33</sub> × ( F / A) × t   =  g<sub>33</sub> t P      ……….(xiii)    
+E<sub>0</sub> =  g<sub>33</sub> × ( F / A) × t   =  g<sub>33</sub> t P      ……….(xiii)    
 
 Thus, if g is known for a particular material, the voltage output per unit stress can be calculated by knowing the value of  t.
 
