@@ -72,11 +72,11 @@ C<sub>p</sub> = capacitance between electrodes,
 C<sub>p</sub> = &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t       ………(v)
   
 From Eqn ( i ), ( iv ), ( v ) <br><br>
-E<sub>0</sub> = Q / C<sub>p</sub> = d F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t  = (d t / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> ) &times; F / A   ………..(vi)
+E<sub>0</sub> = Q / C<sub>p</sub> = d F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A / t  = ( d t / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> ) &times; F / A   ………..(vi)
 	  
  But F / A = P = pressure or stress in N/m²
  
-E<sub>0</sub>= (d t F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A )    ……….(vii)                      
+E<sub>0</sub>= ( d t F / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub> A )    ……….(vii)                      
 
 = g t P                             ……….(viii)
 							
@@ -87,7 +87,7 @@ g = d / &epsilon;<sub>r</sub> &epsilon;<sub>0</sub>  ……….(ix)
 'g' is the voltage sensitivity of the crystal. This is constant for a given crystal cut. Its units are Vm/N <br>
  Now g = E<sub>0</sub> / t P = ( E<sub>0</sub> / t ) / P  ……….(x)      
 <br>
-But E<sub>0</sub>/ t = electric field strength, V/m
+But E<sub>0</sub> / t = electric field strength, V/m
   
 Let   &epsilon; = E<sub>0</sub> / t = electric field
                    
